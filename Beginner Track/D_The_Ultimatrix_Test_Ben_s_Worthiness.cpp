@@ -4,7 +4,7 @@
 Topic : Number Theory , Contructive Algorithm
 
 Approach : 
-	if if is possible to represent n as sum of two prime numbers 
+	if it is possible to represent the prime number n as the sum of two prime numbers 
 	then (n-2) and 2 must be one of the possible option (may be other possible option exit)
 
 	Time complexity : O(sqrt(n))
