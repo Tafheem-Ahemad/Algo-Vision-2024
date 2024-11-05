@@ -7,11 +7,11 @@ Then we use Two Pointer , one on first array , other in second array. we will ke
 if sum of both array is equal then we will merge till this and start a new partition. and create  new partision
 
 if sum of first array is less than sum of second array then
-if (i==n) then print -1 and return , otherrwise we will add element to sum of first array and move first pointer to right 
+if (i==n) then print -1 and return, otherwise we will add element to sum of first array and move first pointer to right 
  
 
-if sum of first array is greater than sum of second array
-if(j==m) then print -1 and return , then we will add element to sum of second array and move second pointer to right.
+if sum of first array is greater than sum of second array then
+if(j==m) then print -1 and return, otherwise we will add the element to the sum of second array and move second pointer to right.
 
 	Time complexity : O(n+m)
 */
