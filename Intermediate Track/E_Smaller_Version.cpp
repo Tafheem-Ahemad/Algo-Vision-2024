@@ -40,21 +40,28 @@ long long modInverse(long long a){
 }
 
 void solve(){
-	long long n;
+	long long  n;
 	cin>>n;
-
-	long long a=n;
-
-	int size_of_n=to_string(n).size();
-
-	long long r=power(10,size_of_n);
-
-	long long denomenater=(r-1+mod)%mod;
-
-	long long numenator=(a%mod * (power(r,n)%mod-1+mod)%mod)%mod;
-
-	long long ans=(numenator*modInverse(denomenater))%mod;
-
+ 
+	long long sz=to_string(n).size();
+ 
+	long long r=power(10,sz);
+ 
+	long long num1=power(r,n);
+	num1--;
+	num1=(num1+mod)%mod;
+ 
+	long long deno=r-1;
+	deno=(deno+mod)%mod;
+ 
+	long long rev=power(deno,mod-2);
+ 
+	long long ans=(rev*num1)%mod;
+ 
+	n%=mod;
+	ans*=n;
+	ans%=mod;
+ 
 	cout<<ans<<endl;
 }
 
